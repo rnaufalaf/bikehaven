@@ -11,7 +11,7 @@ const productRoutes = require("./product");
 route.use("/products", productRoutes);
 
 const shoppingCartRoutes = require("./shoppingCart");
-route.use("/cart", shoppingCartRoutes);
+route.use("/carts", shoppingCartRoutes);
 
 const lineItemRoutes = require("./lineItem");
 route.use("/lineItems", lineItemRoutes);

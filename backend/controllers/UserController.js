@@ -67,8 +67,8 @@ class UserController {
   static async update(req, res, next) {
     try {
       const id = +req.userData.id;
-      const { username, email, password, birthday, gender, avatar, type } =
-        req.body;
+      const avatar = req.file.filename;
+      const { username, email, password, birthday, gender, type } = req.body;
 
       let result = await User.update(
         {

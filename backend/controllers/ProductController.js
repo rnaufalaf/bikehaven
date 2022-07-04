@@ -34,7 +34,6 @@ class ProductController {
         desc,
         price,
         stock,
-        stock,
         weight,
         category,
         condition,
@@ -105,6 +104,24 @@ class ProductController {
       let result = await Product.findByPk(id, {
         include: [ProductImage],
       });
+      res.status(201).json(result);
+    } catch (err) {
+      next(err);
+    }
+  }
+
+  static async addViews(req, res, next) {
+    const id = req.params.id;
+    try {
+      let product = await Product.findByPk(id);
+      let result = await Product.update(
+        {
+          views: product.views + 1,
+        },
+        {
+          where: { id },
+        }
+      );
       res.status(201).json(result);
     } catch (err) {
       next(err);

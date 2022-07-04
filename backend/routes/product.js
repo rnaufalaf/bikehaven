@@ -12,5 +12,6 @@ productRoute.post(
 ); //just for admin
 productRoute.put("/:id", ProductController.update); //just for admin
 productRoute.get("/:id", ProductController.getProductById);
+productRoute.put("/views/:id", ProductController.addViews);
 
 module.exports = productRoute;

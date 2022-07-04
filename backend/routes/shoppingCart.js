@@ -13,6 +13,16 @@ shoppingCartRoute.post(
   authentication,
   ShoppingCartController.addToCart
 );
+shoppingCartRoute.put(
+  "/edit/:id",
+  authentication,
+  ShoppingCartController.editLineItem
+);
+shoppingCartRoute.delete(
+  "/delete/:id",
+  authentication,
+  ShoppingCartController.deleteLineItem
+);
 shoppingCartRoute.post(
   "/checkout",
   authentication,

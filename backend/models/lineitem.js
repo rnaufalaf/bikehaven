@@ -16,6 +16,11 @@ module.exports = (sequelize, DataTypes) => {
   }
   LineItem.init(
     {
+      id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+      },
       qty: DataTypes.INTEGER,
       status: DataTypes.STRING,
       ProductId: DataTypes.INTEGER,

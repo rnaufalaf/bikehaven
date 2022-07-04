@@ -3,10 +3,11 @@ const OrderController = require("../controllers/OrderController");
 const authentication = require("../middlewares/auth");
 
 orderRoute.get("/all", OrderController.getAllOrders); //just for admin
-orderRoute.get("/", authentication, OrderController.orderByUserId);
+orderRoute.get("/:id", authentication, OrderController.getOrderByUserId);
+orderRoute.get("/", authentication, OrderController.getOrdersByUserId);
 orderRoute.post("/checkout", authentication, OrderController.create);
-orderRoute.put("/payment", authentication, OrderController.updatePayment);
-orderRoute.put("/cancel", authentication, OrderController.cancel);
+orderRoute.put("/payment/:id", authentication, OrderController.updatePayment);
+orderRoute.put("/cancel/:id", authentication, OrderController.cancel);
 orderRoute.get("/unpaid", authentication, OrderController.orderUnpaid);
 
 module.exports = orderRoute;
