@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BsFillPlusCircleFill } from "react-icons/bs";
-import { FaSearch } from "react-icons/fa";
 import CardContainerCMS from "../../components/CardContainerCMS";
-import ProductFilter from "../../components/ProductFilter";
 
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from "../../actions/cmsActions";

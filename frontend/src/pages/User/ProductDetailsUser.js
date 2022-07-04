@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { BiPencil } from "react-icons/bi";
 import {
-  BsCurrencyDollar,
   BsBasketFill,
   BsFillStarFill,
-  BsFillTrashFill,
   BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";

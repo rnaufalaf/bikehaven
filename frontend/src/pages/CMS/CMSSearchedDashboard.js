@@ -1,10 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import {
-  BsFillPlusCircleFill,
-  BsFillArrowLeftCircleFill,
-} from "react-icons/bs";
-import { ImCross } from "react-icons/im";
+import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import CardContainerCMS from "../../components/CardContainerCMS";
 
 import { useDispatch, useSelector } from "react-redux";

@@ -5,7 +5,6 @@ import {
   BsCurrencyDollar,
   BsBasketFill,
   BsFillStarFill,
-  BsFillTrashFill,
   BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";

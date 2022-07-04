@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { BiPencil } from "react-icons/bi";
-import Swal from "sweetalert2";
 
 import { useDispatch, useSelector } from "react-redux";
 import { register, clear } from "../../actions/userActions";

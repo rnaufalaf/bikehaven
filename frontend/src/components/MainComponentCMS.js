@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { GiFruitBowl } from "react-icons/gi";
-import { CgProfile } from "react-icons/cg";
-import { BiLogOut } from "react-icons/bi";
-import { HiMenu } from "react-icons/hi";
 import CMSRoute from "../Routes/CMSRoute";
 import HeaderCMS from "../components/HeaderCMS";
 import Footer from "../components/Footer";
-import Swal from "sweetalert2";
 
 function SideBarCMS() {
-  const [showDashboard, setShowDashboard] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
