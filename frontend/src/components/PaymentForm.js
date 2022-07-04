@@ -27,7 +27,7 @@ export default function PaymentForm(props) {
   const stripe = useStripe();
   const elements = useElements();
 
-  const totalDue = props.totalDue 
+  const totalDue = props.totalDue;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,10 +39,13 @@ export default function PaymentForm(props) {
     if (!error) {
       try {
         const { id } = paymentMethod;
-        const response = await axios.post("http://localhost:3000/payment", {
-          amount: totalDue * 100,
-          id: id,
-        });
+        const response = await axios.post(
+          "https://bikehaven-backend.herokuapp.com/payment",
+          {
+            amount: totalDue * 100,
+            id: id,
+          }
+        );
         if (response.data.success) {
           console.log("Successful Payment");
           setSuccess(true);

@@ -36,7 +36,9 @@ function SideBarCMS() {
         <div className="container mx-auto">
           <CMSRoute />
         </div>
-        <Footer />
+        <div className="sticky bottom-0 z-[2]">
+          <Footer />
+        </div>
       </main>
     </div>
   );

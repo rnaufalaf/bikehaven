@@ -317,7 +317,7 @@ const OrderDetailsPage = () => {
                         CANCELLED
                       </div>
                     ) : (
-                      <div className="text-lightColor bg-darkColor font-bold p-3 rounded-md mt-5">
+                      <div className="text-lightColor bg-green-700 font-bold p-3 rounded-md mt-5">
                         ORDER HAS BEEN PAID
                       </div>
                     )}
