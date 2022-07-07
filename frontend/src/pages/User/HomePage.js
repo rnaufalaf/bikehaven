@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import CarouselComponent from "../../components/CarouselComponent";
 import CardContainerUser from "../../components/CardContainerUser";
 
